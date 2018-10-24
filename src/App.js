@@ -19,6 +19,8 @@ class App extends Component {
 
     let x = this.shuffle(newArr)
 
+alert("YOU LOSE")
+
     this.setState({
       pictureArray: x,
       score: 0
@@ -31,7 +33,7 @@ class App extends Component {
 
     while (kevin.length > 0) {
 
-      let a = Math.floor(Math.random() * (kevin.length - 1))
+      let a = Math.floor(Math.random() * (kevin.length))
       emptyKevin.push(kevin[a])
       kevin.splice(a, 1)
 
